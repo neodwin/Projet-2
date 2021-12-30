@@ -1,5 +1,28 @@
+
 @font-face {
     font-family: "font-1";
-src: url(/assets/Raleway/Raleway-VariableFont_wght.ttf);
+    src: url(/assets/Raleway/static/Raleway-Light.ttf);
 }
 
+/* HEADER */
+h1 {
+   font-family: "font-1";
+   font-size: 20px;
+}
+h2 {
+    font-family: "font-1";
+    font-size: 14px;
+}
+.menu {
+    font-family: "font-1";
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+}
+li {
+    list-style: none;
+    height: 20px;
+    width: 120px;
+}
