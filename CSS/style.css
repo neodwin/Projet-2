@@ -1,20 +1,11 @@
-
-@font-face {
-    font-family: "font-1";
-    src: url(/assets/Raleway/static/Raleway-Light.ttf);
+/**** POLICE GOOGLE FONT RALEWAY ****/
+* {
+    font-family: "raleway";
 }
 
-/* HEADER */
-h1 {
-   font-family: "font-1";
-   font-size: 20px;
-}
-h2 {
-    font-family: "font-1";
-    font-size: 14px;
-}
+/**** HEADER ****/
 .menu {
-    font-family: "font-1";
+    font-family: "Raleway";
     display: flex;
     justify-content: space-between;
 }
@@ -25,4 +16,44 @@ li {
     list-style: none;
     height: 20px;
     width: 120px;
+    padding-top: 15px;
+}
+img {
+    padding: 25px 0px;
+    width: 150px;
+}
+h1 {
+    margin-bottom: 0px;
+    font-family: "Raleway";
+    font-size: 20px;
+}
+h2 {
+    margin-bottom: 20px;
+    font-family: "Raleway";
+    font-size: 14px;
+}
+
+/**** BODY ****/
+i {
+    display: inline-block; 
+    background-color: #F2F2F2;
+    padding: 14px;
+    height: 28px;
+    font-size: 25px;
+    border-radius: 15px 0px 0px 15px;
+}
+input {
+    padding: 10px;
+    height: 52px;
+    font-size: 15px;
+    border: none;
+}
+button {
+    background-color: #0065FC;
+    color: white;
+    padding: 15px;
+    height: 52px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
 }
