@@ -6,45 +6,83 @@
 /**** HEADER ****/
 .menu {
     font-family: "Raleway";
+    font-size: 15px;
     display: flex;
     justify-content: space-between;
 }
+#logo {
+    margin: 10px 0px 0px 10px;
+}
+nav li {
+    border-top: 3px solid transparent;
+}
+nav li :hover {
+    border-top: 3px solid #0065FC;
+    padding-top: 20px;
+    color: #0065FC;
+    border-bottom-color: transparent 3px solid;
+}
 ul {
     display: flex;
+    justify-content: space-between;
+    list-style: none;
 }
 li {
-    list-style: none;
+    padding: 10px;
     height: 20px;
-    width: 120px;
-    padding-top: 15px;
+    width: 170px;
 }
 h1 {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 0px;
     font-family: "Raleway";
     font-size: 20px;
 }
 h2 {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
     font-family: "Raleway";
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 3px solid lightgrey;
+    }    
+    nav li:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top-color: transparent 3px solid;
+    }
+    h1 h2 {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 /**** BODY ****/
 i {
     display: inline-block; 
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     padding: 14px;
     height: 28px;
     font-size: 25px;
     border-radius: 15px 0px 0px 15px;
 }
 input {
+    display: inline-block;
     padding: 10px;
     height: 52px;
     font-size: 15px;
     border: none;
+    font-weight: bold;
 }
 button {
+    display: inline-block;
     background-color: #0065FC;
     color: white;
     padding: 15px;
@@ -52,9 +90,4 @@ button {
     border: none;
     border-radius: 0px 15px 15px 0px;
     cursor: pointer;
-}
-@media screen and (max-width: 768px) {
-    .menu {
-        display: block;
-    }
 }
