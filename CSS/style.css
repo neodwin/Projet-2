@@ -1,93 +1,111 @@
-/**** POLICE GOOGLE FONT RALEWAY ****/
+/**** POLICE GOOGLE FONT RALEWAY + Box Sizing ****/
 * {
-    font-family: "raleway";
+    box-sizing: border-box;
+    font-family: "raleway", "sans-serif";
 }
 
 /**** HEADER ****/
-.menu {
-    font-family: "Raleway";
-    font-size: 15px;
+nav {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 #logo {
-    margin: 10px 0px 0px 10px;
+    height: 40px;
+    margin-right: auto;
+    padding: 0px 40px;
 }
-nav li {
+.menu {
+    display: flex;
+}
+nav a {
+    padding: 32px;
     border-top: 3px solid transparent;
 }
-nav li :hover {
+nav a:hover {
     border-top: 3px solid #0065FC;
-    padding-top: 20px;
     color: #0065FC;
-    border-bottom-color: transparent 3px solid;
 }
-ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+a {
+    text-decoration: none;
 }
-li {
-    padding: 10px;
-    height: 20px;
-    width: 170px;
+.title {
+    padding: 0px 20px;
 }
 h1 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0px;
-    font-family: "Raleway";
     font-size: 20px;
 }
-h2 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    font-family: "Raleway";
+p {
     font-size: 15px;
-    font-weight: lighter;
 }
+    
+/* RESPONSIVE HEADER */
 @media screen and (max-width: 768px) {
     .menu {
-        display: block;
         width: 100%;
-        text-align: center;
-        border-bottom: 3px solid lightgrey;
-    }    
-    nav li:hover {
-        border-bottom: 3px solid #0065FC;
-        border-top-color: transparent 3px solid;
     }
-    h1 h2 {
-        display: flex;
-        justify-content: space-around;
+    .menu a {
+        width: 50%;
+        text-align: center;
+        border-bottom: 3px solid transparent;
+        border-bottom: 3px solid lightgrey;
+    }
+    .menu a:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top: 3px solid transparent;
+        color: #0065FC;
+    }
+    #logo {
+            height: 40px;
+            margin: auto;
     }
 }
 
-/**** BODY ****/
-i {
-    display: inline-block; 
+/**** MAIN ****/
+.search {
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+}
+i { 
+    padding: 15px 15px;
     background-color: #f2f2f2;
-    padding: 14px;
-    height: 28px;
+    height: 52px;
     font-size: 25px;
     border-radius: 15px 0px 0px 15px;
 }
 input {
-    display: inline-block;
-    padding: 10px;
+    padding: 15px;
     height: 52px;
     font-size: 15px;
     border: none;
     font-weight: bold;
+    overflow: auto;
 }
 button {
-    display: inline-block;
     background-color: #0065FC;
     color: white;
-    padding: 15px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 30px;
     height: 52px;
     border: none;
     border-radius: 0px 15px 15px 0px;
     cursor: pointer;
+}
+.fas.fa-search {
+    display: none;
+}
+/* RESPONSIVE MAIN */
+@media screen and (max-width: 768px) {
+    .button {
+        display: none;
+        border-radius: 15px 15px 15px 15px;
+    }
+    .fas.fa-search {
+        display: flex;
+        background: #0065FC;
+    }
 }
