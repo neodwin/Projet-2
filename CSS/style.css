@@ -68,18 +68,19 @@ p {
     padding: 0px 20px;
     align-items: center;
 }
-i { 
-    padding: 15px 15px;
+.fas.fa-map-marker-alt { 
+    padding: 15px 17px;
     background-color: #f2f2f2;
+    width: 48px;
     height: 52px;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 15px 0px 0px 15px;
 }
 input {
     padding: 15px;
     height: 52px;
     font-size: 15px;
-    border: none;
+    border: 1px solid #f2f2f2;
     font-weight: bold;
     overflow: auto;
 }
@@ -89,7 +90,7 @@ button {
     text-align: center;
     font-size: 17px;
     font-weight: bold;
-    padding: 0 30px;
+    padding: 0 25px;
     height: 52px;
     border: none;
     border-radius: 0px 15px 15px 0px;
@@ -100,12 +101,13 @@ button {
 }
 /* RESPONSIVE MAIN */
 @media screen and (max-width: 768px) {
-    .button {
-        display: none;
+    button {
         border-radius: 15px 15px 15px 15px;
+    }
+    .button-search {
+        display: none;
     }
     .fas.fa-search {
         display: flex;
-        background: #0065FC;
     }
 }
