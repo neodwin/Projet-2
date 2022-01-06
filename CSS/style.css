@@ -1,3 +1,6 @@
+/**** NORMALIZE.CSS ****/
+@import url(./normalize.css);
+
 /**** POLICE GOOGLE FONT RALEWAY + Box Sizing ****/
 * {
     box-sizing: border-box;
@@ -27,7 +30,7 @@ nav a:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
-a {
+.menu a {
     text-decoration: none;
 }
 .title {
@@ -43,8 +46,10 @@ p {
 /* RESPONSIVE HEADER */
 @media screen and (max-width: 768px) {
     #logo {
-            height: 40px;
-            margin: auto;
+        width: 200px;
+        height: 80px;
+        margin: auto;
+        padding-top: 20px;
     }
     .menu {
         width: 100%;
@@ -52,6 +57,7 @@ p {
     .menu a {
         padding-bottom: 17px;
         width: 50%;
+        font-size: 20px;
         text-align: center;
         border-bottom: 3px solid transparent;
         border-bottom: 3px solid lightgrey;
@@ -63,6 +69,12 @@ p {
     }
     .title {
         padding: 15px 20px 15px 20px;
+    }
+    .title h1 {
+        font-size: 22px;
+    }
+    .title p {
+        font-size: 16px;
     }
 }
 
@@ -156,10 +168,64 @@ button {
     border-radius: 50%;
     margin: 0px 10px 0px 20px;
 }
+
+/** CARDS ACCOMMODATIONS **/
+.accommodations {
+    display: flex;
+    gap: 15px;
+}
+.accommodations > div {
+    border: 1px solid red;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0px 20px 0px 20px;
+}
+.Marseille {
+    flex-basis: 66%;
+}
+.Marseille a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.accommodations-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.accommodations-list div {
+    border: 1px solid blue;
+    flex-basis: calc(33%-15px);
+}
+.popular {
+    flex-basis: 33%;
+}
+.accommodations .popular {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.accommodations .popular div {
+    border: 1px solid blue;
+}
 /* RESPONSIVE MAIN */
 @media screen and (max-width: 768px) {
+    /* SEARCH */
+    .fas.fa-map-marker-alt {
+        
+    }
+    input {
+        border-right: 0px;
+        padding-right: 50px;
+        margin-right: -15px;
+    }
     button {
         border-radius: 15px 15px 15px 15px;
+        padding: 18px 18px 18px 18px;
     }
     .button-search {
         display: none;
@@ -167,8 +233,22 @@ button {
     .fas.fa-search {
         display: flex;
     }
+    /* FILTERS */
     .filters-list {
         flex-direction: column;
         align-items: flex-start;
+    }
+    /* CARDS ACCOMMODATIONS */
+    .accommodations {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .accommodations-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .accommodations .popular {
+        display: flex;
+        flex-direction: column;
     }
 }
