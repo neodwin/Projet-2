@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: "raleway", "sans-serif";
 }
-
+body {
+    margin: 0px 50px;
+}
 /**** HEADER ****/
 nav {
     display: flex;
@@ -45,6 +47,9 @@ p {
     
 /* RESPONSIVE HEADER */
 @media screen and (max-width: 768px) {
+    body {
+        margin: 0px 0px;
+    }
     #logo {
         width: 200px;
         height: 80px;
@@ -132,6 +137,10 @@ button {
     border: 1px solid lightgrey;
     border-radius: 30px;
 }
+.responsive-filters {
+    display: flex;
+    gap: 30px;
+}
 .filters:hover {
     background-color: #f3f8ff;
     transform: scale(1.02);
@@ -180,6 +189,9 @@ button {
     padding: 15px;
     margin: 0px 20px 0px 20px;
 }
+.Marseille {
+    width: 80%;
+}
 .Marseille-accommodations-list .Marseille {
     flex-basis: 66%;
 }
@@ -199,9 +211,10 @@ button {
     
 }
 .accommodations-cards {
+    width: 30%;
     background-color: white;
     border-radius: 15px;
-    padding: 7px;
+    padding: 5px;
     box-shadow: 0px 0px 16px #0000002e;
     flex-grow: 1;
 }
@@ -238,6 +251,13 @@ button {
     display: flex;
     border-radius: 15px;
     box-shadow: 0px 0px 16px #0000002e;
+    background-color: white;
+    padding: 7px;
+    box-shadow: 0px 0px 16px #0000002e;
+    flex-grow: 1;
+}
+.popular-cards p {
+    margin: 4px 10px;
 }
 .popular-cards img {
     border-radius: 15px 0px 0px 15px;
@@ -245,6 +265,9 @@ button {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+.popular-image {
+    width: 50%;
 }
 .popular-text {
     flex-basis: 100%;
@@ -272,10 +295,17 @@ button {
         flex-direction: column;
         align-items: flex-start;
     }
+    .responsive-filters {
+        display: flex;
+        gap: 30px;
+    }
     /* CARDS ACCOMMODATIONS */
     .accommodations {
         display: flex;
         flex-direction: column-reverse;
+    }
+    .accommodations-cards {
+        width: 100%;
     }
     .Marseille-accommodations-list {
         display: flex;
