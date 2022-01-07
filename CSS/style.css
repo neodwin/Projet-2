@@ -175,13 +175,12 @@ button {
     gap: 15px;
 }
 .accommodations > div {
-    border: 1px solid red;
     background-color: #f2f2f2;
     border-radius: 15px;
     padding: 15px;
     margin: 0px 20px 0px 20px;
 }
-.Marseille {
+.Marseille-accommodations-list .Marseille {
     flex-basis: 66%;
 }
 .Marseille a {
@@ -189,35 +188,70 @@ button {
     color: black;
     text-decoration: none;
 }
-.accommodations-list {
+.Marseille-accommodations-list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 15px;
 }
-.accommodations-list div {
-    border: 1px solid blue;
-    flex-basis: calc(33%-15px);
+.Marseille-accommodations-list div {
+    
 }
-.popular {
+.accommodations-cards {
+    background-color: white;
+    border-radius: 15px;
+    padding: 7px;
+    box-shadow: 0px 0px 16px #0000002e;
+    flex-grow: 1;
+}
+.accommodations-cards img {
+    border-radius: 15px 15px 0px 0px;
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.accommodations-cards p {
+    margin: 4px 10px;
+}
+.title-cards {
+    font-weight: bold;
+}
+.blue {
+    color: #0065FC;
+}
+.grey {
+    color: #d9d9d9;
+}
+/** POPULAR **/
+.Marseille-accommodations-list .popular-flex {
     flex-basis: 33%;
 }
-.accommodations .popular {
+.accommodations .popular-flex {
     display: flex;
     flex-direction: column;
     gap: 15px;
     flex-wrap: wrap;
 }
-.accommodations .popular div {
-    border: 1px solid blue;
+.popular-cards {
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 0px 16px #0000002e;
+}
+.popular-cards img {
+    border-radius: 15px 0px 0px 15px;
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.popular-text {
+    flex-basis: 100%;
 }
 /* RESPONSIVE MAIN */
 @media screen and (max-width: 768px) {
     /* SEARCH */
-    .fas.fa-map-marker-alt {
-        
-    }
     input {
         border-right: 0px;
         padding-right: 50px;
@@ -243,11 +277,12 @@ button {
         display: flex;
         flex-direction: column-reverse;
     }
-    .accommodations-list {
+    .Marseille-accommodations-list {
         display: flex;
         flex-direction: column;
     }
-    .accommodations .popular {
+    /** POPULAR **/
+    .accommodations .popular-flex {
         display: flex;
         flex-direction: column;
     }
