@@ -326,7 +326,11 @@ button {
         margin: 0;
     }
     .accommodations-cards {
-        width: 127%;
+        width: 144%;
+        margin: 0px 0px 0px -16px;
+    }
+    .Marseille h3 {
+        margin-left: 5px;
     }
     .accommodations .Marseille {
         background-color: white;
