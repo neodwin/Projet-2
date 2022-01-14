@@ -147,6 +147,7 @@ button {
     background-color: #f3f8ff;
     transform: scale(1.02);
     transition: all 100ms;
+    cursor: pointer;
 }
 .filters .fas {
     display: flex;
@@ -240,6 +241,7 @@ button {
     transform: scale(1.05);
     transition: all 100ms;
     color: darkblue;
+    cursor: pointer;
 }
 .title-cards {
     font-weight: bold;
@@ -290,6 +292,7 @@ button {
     transform: scale(1.05);
     transition: all 100ms;
     color: darkblue;
+    cursor: pointer;
 }
 .popular-image {
     width: 60%;
@@ -343,6 +346,7 @@ button {
     transform: scale(1.05);
     transition: all 100ms;
     color: darkblue;
+    cursor: pointer;
 }
 /* RESPONSIVE MAIN */
 @media screen and (max-width: 768px) {
