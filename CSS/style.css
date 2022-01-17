@@ -390,8 +390,12 @@ button {
         margin: 0;
     }
     .accommodations-cards {
-        width: 144%;
+        width: 141%;
         margin: 0px 0px 0px -16px;
+    }
+    .accommodations-cards img {
+        object-fit: cover;
+        object-position: center;
     }
     .Marseille h3 {
         margin-left: 5px;
