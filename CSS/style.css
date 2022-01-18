@@ -238,6 +238,9 @@ button {
     object-position: center;
     margin-bottom: -4px;
 }
+.accommodations-cards .title-cards {
+    padding-top: 7px;
+}
 .accommodations-cards p {
     margin: 4px 10px;
 }
@@ -250,6 +253,9 @@ button {
 }
 .title-cards {
     font-weight: bold;
+}
+.accommodations-cards .stars {
+    font-size: 12px;
 }
 .blue {
     color: #0065FC;
@@ -305,11 +311,18 @@ button {
 .popular-text {
     flex-basis: 100%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     margin: 10px 0px 0px 10px;
 }
+.popular-text .popular-sub {
+    margin-bottom: auto;
+}
 .popular-text .stars {
-    margin-top: 40px;
+    margin-bottom: 7px;
+}
+.popular-cards .stars {
+    font-size: 12px;
 }
 /** ACTIVITY **/
 .Activity h3 {
