@@ -1,0 +1,142 @@
+/* RESPONSIVE HEADER */
+
+body {
+    margin: 0px 0px;
+}
+#logo {
+    width: 200px;
+    height: 80px;
+    margin: auto;
+    padding-top: 20px;
+}
+.menu {
+    width: 100%;
+}
+.menu a {
+    padding-bottom: 17px;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid lightgrey;
+}
+.menu a:hover {
+    border-bottom: 3px solid #0065FC;
+    border-top: 3px solid transparent;
+    color: #0065FC;
+}
+.title {
+    padding: 15px 20px 15px 20px;
+}
+.title .headline {
+    font-size: 21px;
+}
+.title .sub {
+    font-size: 16px;
+}
+
+
+.search {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* RESPONSIVE MAIN */
+
+/* SEARCH */
+
+input {
+    border-right: 0px;
+    padding-right: 50px;
+    margin-right: -15px;
+}
+button {
+    border-radius: 15px 15px 15px 15px;
+    padding: 18px 18px 18px 18px;
+}
+.button-search {
+    background-color: #0065FC;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 25px;
+    height: 52px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+.fas.fa-search {
+    display: none;
+}
+
+/* CARDS ACCOMMODATIONS */
+.accommodations {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.accommodations > div {
+    border-radius: 0px;
+    margin: 0;
+}
+.Marseille {
+    width: 100%;
+}
+.Marseille .accommodations-cards {
+    width: 100%;
+    margin: 0px;
+}
+.accommodations-cards img {
+    object-fit: cover;
+    object-position: center;
+}
+.Marseille h3 {
+    margin-left: 5px;
+}
+.accommodations .Marseille {
+    background-color: white;
+}
+.Marseille-accommodations-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+/** POPULAR **/
+.accommodations .popular-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+/** ACTIVITY **/
+.Activities-list {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.Activities-list .column {
+    width: 100%;
+    height: 240px;
+    padding: 10px;
+}
+.Activities-list .double.column {
+    height: 512px;
+    padding: 10px;
+}
+
+/* RESPONSIVE FOOTER */
+
+.footer {
+    flex-direction: column;
+    gap: 20px;
+    margin: 15px 0px 0px 0px;
+}
+.footer .about 
+{
+    margin-left: -40px;
+}
+.footer .our.accommodations, .assistance {
+    margin-left: -10px;
+}
