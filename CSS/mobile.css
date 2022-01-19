@@ -117,6 +117,9 @@
 
     /** ACTIVITY **/
 
+    .Activity {
+        padding: 0px;
+    }
     .Activities-list {
         display: flex;
         flex-direction: column;

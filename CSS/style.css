@@ -294,7 +294,9 @@ button {
 }
 
 /** ACTIVITY **/
-
+.Activity {
+    padding: 0px 10px
+}
 .Activity h3 {
     padding-top: 20px;
     margin-left: 15px;
