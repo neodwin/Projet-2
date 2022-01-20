@@ -80,6 +80,10 @@ button {
     align-items: flex-start;
 }
 
+.filters-list h1 {
+    margin-bottom: 0px;
+}
+
 .responsive-filters {
     display: flex;
     gap: 30px;
